@@ -33,7 +33,6 @@ class DetailsViewController: UIViewController, DetailsRoute {
         super.viewDidLoad()
 
         configureUI()
-        //news.publishedAt?.formatted()
     }
     
     private func configureUI() {
