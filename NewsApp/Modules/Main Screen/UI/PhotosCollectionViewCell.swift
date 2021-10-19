@@ -30,7 +30,7 @@ class PhotosCollectionViewCell: UICollectionViewCell {
             return
         }
         guard let url = URL(string: urlString) else {return}
-        let filter: AspectScaledToFillSizeFilter = AspectScaledToFillSizeFilter(size: CGSize(width: screenWidth, height: screenWidth * 0.7))
+        let filter: AspectScaledToFillSizeFilter = AspectScaledToFillSizeFilter(size: CGSize(width: screenWidth, height: screenWidth))
         photoImageView.af.setImage(withURL: url, placeholderImage: #imageLiteral(resourceName: "galleryPlaceholder"),filter: filter, imageTransition: .crossDissolve(0.5), runImageTransitionIfCached: false)
     }
     
