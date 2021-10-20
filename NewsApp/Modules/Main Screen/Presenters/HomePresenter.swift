@@ -29,6 +29,7 @@ class HomePresenter {
     func resetNews() {
         news = []
         NewsUseCase.reset() // reset paging
+        view.reloadData()
     }
     
     func getNews(query: String = "") {
